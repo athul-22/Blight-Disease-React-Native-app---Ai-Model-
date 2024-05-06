@@ -13,6 +13,7 @@
     "axios": "^1.6.8",
     "react": "18.2.0",
     "react-native": "0.74.1",
+    "react-native-image-crop-picker": "^0.41.0",
     "react-native-image-picker": "^7.1.2"
   },
   "devDependencies": {
