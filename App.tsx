@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /**
@@ -17,6 +18,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Image,
 } from 'react-native';
 
 import {
@@ -73,7 +75,7 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
+        {/* <Header /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -82,6 +84,11 @@ function App(): React.JSX.Element {
             🥔 Potato <Text style={styles.highlight}>Blight</Text> Disease 🦠 
             prediction App!
           </Section>
+        </View>
+        <View>
+        <Image
+          source={{uri:'https://img.freepik.com/free-vector/focus-abstract-concept_335657-3014.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714435200&semt=ais',width: 400, height: 400}}>
+          </Image>
         </View>
       </ScrollView>
     </SafeAreaView>
